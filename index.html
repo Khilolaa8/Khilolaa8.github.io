@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f8ff">
+  <meta name="description" content="Khilola — first-year IT student at Inha University in Tashkent.">
+  <title>Khilola — Personal Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Khilola home"><span class="brand-mark">K</span><span>khilola<span class="brand-dot">.</span></span></a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About me</a>
+        <a href="#courses">My courses</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Toggle colour theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 15.5A8.5 8.5 0 0 1 8.5 3.5 8.5 8.5 0 1 0 20.5 15.5Z"></path></svg>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> FIRST-YEAR IT STUDENT · TASHKENT</div>
+        <h1><span class="name-line"><span class="profile-avatar"><span class="avatar-fallback" aria-hidden="true">K</span><img class="profile-photo" src="photo.jpg" alt="Portrait of Khilola"></span><span>Hi, I’m <span class="accent-text">Khilola.</span></span></span><span class="hero-second-line">Curious by nature,<br><span class="muted-heading">building with code.</span></span></h1>
+        <p class="hero-description">I’m an IT student at Inha University in Tashkent, exploring how technology turns ideas into useful things. This is my little corner of the web.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#about">A little about me</a>
+        </div>
+        <div class="hero-note"><span class="note-line"></span><span>Learning one concept at a time.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Decorative abstract blue graphic">
+        <div class="art-glow"></div>
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-card-top"><span></span><span></span><span></span><small>hello.cpp</small></div>
+          <div class="code-lines">
+            <div><i>01</i><code><b class="code-purple">#include</b> <em>&lt;iostream&gt;</em></code></div>
+            <div><i>02</i><code></code></div>
+            <div><i>03</i><code><b class="code-blue">int</b> main() {</code></div>
+            <div><i>04</i><code>&nbsp;&nbsp;std::cout &lt;&lt; <em class="code-green">"Hello, world!"</em>;</code></div>
+            <div><i>05</i><code>&nbsp;&nbsp;<b class="code-blue">return</b> <em>0</em>;</code></div>
+            <div><i>06</i><code>}</code></div>
+          </div>
+          <div class="code-card-footer"><span class="terminal-dot"></span> ready to build</div>
+        </div>
+        <div class="floating-chip chip-top"><span class="chip-icon">✳</span> always learning</div>
+        <div class="floating-chip chip-bottom"><span class="chip-icon">⌘</span> C++ · ideas · curiosity</div>
+        <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container section-inner">
+        <div class="section-heading">
+          <span class="section-kicker">01 / A LITTLE INTRO</span>
+          <h2>About <span class="accent-text">me</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-lead"><p class="large-copy">I’m at the beginning of my tech journey — <span class="accent-text">asking questions,</span> learning the fundamentals, and discovering what I can create.</p></div>
+          <div class="about-details">
+            <p>Currently studying at <strong>Inha University in Tashkent</strong>, where I’m building a foundation in programming, mathematics, and the way computers work.</p>
+            <p>I enjoy learning step by step, solving problems, and finding the logic behind things. I’m especially interested in growing as a software developer and exploring the possibilities of AI.</p>
+            <div class="fact-row"><span>BASED IN</span><strong>Tashkent, Uzbekistan</strong></div>
+            <div class="fact-row"><span>FOCUS</span><strong>Computer Science &amp; IT</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="courses">
+      <div class="section-heading">
+        <span class="section-kicker">02 / WHAT I’M STUDYING</span>
+        <h2>My <span class="accent-text">courses</span></h2>
+        <p class="section-intro">The subjects shaping my first year and strengthening my foundations.</p>
+      </div>
+      <div class="course-grid">
+        <article class="course-card"><div class="card-top"><span class="course-number">01</span><span class="course-symbol">⌘</span></div><h3>Programming in C++</h3><p>Learning to think logically, write code, and solve problems with algorithms.</p><span class="course-tag">PROGRAMMING</span></article>
+        <article class="course-card"><div class="card-top"><span class="course-number">02</span><span class="course-symbol">∑</span></div><h3>Calculus I</h3><p>Exploring functions, limits, derivatives, and the mathematics behind change.</p><span class="course-tag">MATHEMATICS</span></article>
+        <article class="course-card"><div class="card-top"><span class="course-number">03</span><span class="course-symbol">↗</span></div><h3>Physics</h3><p>Building an understanding of motion, forces, energy, and the physical world.</p><span class="course-tag">SCIENCE</span></article>
+        <article class="course-card"><div class="card-top"><span class="course-number">04</span><span class="course-symbol">▦</span></div><h3>Introduction to IT</h3><p>Discovering the core concepts, systems, and technologies behind computing.</p><span class="course-tag">COMPUTING</span></article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">03 / THINGS I’M MAKING</span>
+          <h2>Selected <span class="accent-text">projects</span></h2>
+          <p class="section-intro">A growing space for experiments, coursework, and ideas. More projects coming as I learn.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured">
+            <div class="project-visual visual-one"><div class="visual-window"><div class="visual-window-bar"><span></span><span></span><span></span></div><div class="visual-content"><div class="visual-label">MY FIRST WEBSITE</div><div class="visual-title">Ideas into<br><b>pixels.</b></div><div class="visual-line"></div><div class="visual-pill">HTML · CSS · JS</div></div></div></div>
+            <div class="project-info"><div class="project-meta"><span>WEB DEVELOPMENT</span><span class="project-status">THIS WEBSITE</span></div><h3>Personal Homepage</h3><p>A responsive personal website built with HTML, CSS, and vanilla JavaScript.</p><div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual visual-two"><div class="terminal-visual"><div class="terminal-heading">~/learning-cpp <span>● ● ●</span></div><p><b>&gt;</b> compile practice.cpp</p><p class="terminal-success">✓ Build successful</p><p><b>&gt;</b> learning every day<span class="cursor">_</span></p></div></div>
+            <div class="project-info"><div class="project-meta"><span>PROGRAMMING</span><span class="project-status status-progress">LEARNING</span></div><h3>C++ Practice</h3><p>A collection of small exercises as I practise programming fundamentals and problem-solving.</p><div class="tag-list"><span>C++</span><span>Algorithms</span></div></div>
+          </article>
+        </div>
+        <p class="projects-footnote"><span>✳</span> This portfolio is a work in progress — just like my learning journey.</p>
+      </div>
+    </section>
+
+    <section class="section network-section" id="network">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">04 / A LITTLE NETWORK RESEARCH</span>
+          <h2>Network <span class="accent-text">detective</span></h2>
+          <p class="section-intro">A small snapshot of the network path and equipment details. The values below are placeholders until checked on your own connection.</p>
+        </div>
+        <div class="network-grid">
+          <article class="network-card"><span class="network-icon">⌁</span><span class="network-label">INTERNET PROVIDER</span><h3>UZONLINE</h3><p>The ISP / autonomous system serving this connection.</p></article>
+          <article class="network-card"><span class="network-icon">⌂</span><span class="network-label">ROUTER MAKER</span><h3>Tenda</h3><p>The manufacturer of the router on this network.</p></article>
+          <article class="network-card"><span class="network-icon">↝</span><span class="network-label">ROUTE TO INHA.UZ</span><h3>30 hops</h3><p>The number of network hops to inha.uz from this connection.</p></article>
+        </div>
+        <p class="network-privacy"><span>✓</span> Privacy note: no public IP address or MAC address is displayed here.</p>
+      </div>
+    </section>
+
+    <section class="section contact-section container" id="contact">
+      <div class="contact-panel">
+        <div class="contact-orb"></div>
+        <div class="contact-content">
+          <span class="section-kicker">05 / SAY HELLO</span>
+          <h2>Let’s connect<span class="accent-text">.</span></h2>
+          <p>I’m always happy to connect with fellow students, curious minds, and people who love building things.</p>
+          <a class="button button-light" href="mailto:your.email@example.com" id="email-link">Get in touch <span aria-hidden="true">↗</span></a>
+          <p class="email-hint">Before publishing, replace the sample email address in <code>index.html</code> with your own.</p>
+        </div>
+        <div class="contact-decoration" aria-hidden="true">K<span>.</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container"><a class="brand footer-brand" href="#home"><span class="brand-mark">K</span><span>khilola<span class="brand-dot">.</span></span></a><span>Designed &amp; built with curiosity.</span><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+</body>
+</html>
